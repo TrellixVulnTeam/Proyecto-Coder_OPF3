@@ -4,14 +4,17 @@
     text-decoration: none;
 }
 
+/*
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+} */
+
 body {
     background-color: rgb(230, 230, 230);
     text-decoration: none;
     min-height: 100vh;
-}
-
-.main {
-    padding-bottom: 100px;
 }
 
 footer {
@@ -19,17 +22,17 @@ footer {
     bottom: 0;
     width: 100%;
     margin: 0 auto;
-
 }
 
 /* NAV */
+
 
 nav {
     width: 100%;
     z-index: 1;
     position: fixed;
     top: 0;
-}
+} 
 
 .navlogo_container {
     background-color:#efd3d7;
@@ -42,7 +45,6 @@ nav {
     width: 80px;
     border-radius: 110px;
     position: relative;
-    top: 11px;
     left: 30px;
 }
 
@@ -61,16 +63,19 @@ ul li {
 
 .navlink_li{
     display: inline-block;
-    margin: 30px 20px 15px 20px;
-    padding: 5px;
-    font-family: "Roboto", sans-serif;
+    padding: 8px;
     color: rgb(80, 58, 58);
+    margin: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family:'Asap', sans-serif;
 }
 
 .navlink_li a {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
-    color: rgb(80, 58, 58);
+    color:rgb(80, 58, 58);
     position: relative;
     font-weight: 500;
 }
@@ -104,6 +109,48 @@ ul li {
     font-size: 11px;
     padding: 10px;
     font-weight: bold;
+}
+
+/* NAV CON BOOTSTRAP EN CONTACTO HTML */ 
+
+.navbar a {
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.navbar a:hover {
+    color: #a34755;
+    transition: .9s;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform:translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(80, 58, 58,0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+.nav_descuento_contacto {
+    background-color: #885942;
+    font-size: 10px;
+    font-family: 'Asap', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    margin-top: 7px;
+}
+
+.nav_descuento_contacto p {
+    padding: 5px;
 }
 
 /* FIN DEL NAV */ 
@@ -225,7 +272,7 @@ ul li {
 .container_footer {
     width: 100%;
     background-color:#cea4aa;
-    height: 200px;
+    height: 260px;
     position: relative;
     bottom: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -263,6 +310,10 @@ ul li {
     width: 60px;
 }
 
+.container_redes_box{
+    margin-top: 30px;
+}
+
 .container_redes_box .boton_redes {
     display: inline-block;
     height: 60px;
@@ -270,7 +321,7 @@ ul li {
     overflow: hidden;
     margin: 0px 5px;
     background: #fff;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     transition: all 0.2s ease-out;
@@ -296,7 +347,7 @@ ul li {
     display: inline-block;
     height: 60px;
     width: 60px;
-    border-radius: 50px;
+    border-radius: 20px;
     box-sizing: border-box;
     line-height: 60px;
     text-align: center;
@@ -305,6 +356,7 @@ ul li {
 .container_redes_box .boton_redes .boton_redes_icon i{
     font-size: 25px;
     line-height: 60px;
+    text-decoration: none;
 }
 
 .container_copyright {
@@ -313,6 +365,39 @@ ul li {
     margin-top: 40px;
     color: #fff;
 }
+
+/* FOOTER CON BOOTSTRAP EN CONTACTO HTML */
+
+.card{
+    background-color:#885942;
+    color: white;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.container_card_blankspace {
+    width: 50%;
+    border-radius: 5px;
+    border-color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.container_card_newsleeter_boton {
+    width: 90px;
+    background-color: white;
+    color: #885942;
+    border-color: white;
+    padding: 0px 2px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px white;
+}
+
 
 /* FIN DEL FOOTER */ 
 
@@ -565,52 +650,20 @@ ul li {
 /* INICIO DE CONTACTO HTML */
 
 form {
-    width: 500px;
-    height: 600px;
-}
-
-.form_contacto {
-    width: 100%;   
-    margin-top: 170px;
-    margin-left: 28em;
-    margin-bottom: 200px;
-    padding:10px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.form_contacto h1 {
-    color: rgb(80, 58, 58);
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 30px;
     width: 100%;
 }
 
-.form_contacto input {
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 7px;
-    font-size: 17px;
-    text-align: center;
-    border: none;
-}
-
-.form_contacto textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    font-size: 17px;
-    text-align: center;
-    border: none;
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-}
-
-.boton_form input{
-    border: 1px solid rgb(43, 23, 23);
-    margin: 9px;
+.background_contacto {
+    height: 100vh;
 }
 
 /* FIN DE CONTACTO HTML */
+
+/* INICIO DE BOOTSTRAP APLICADO EN CONTACTO HTML */
+
+.container-fluid {
+    margin-top: 20vh;
+}
+
+
+/* FIN DE BOOTSTRAP APLICADO EN CONTACTO HTML */

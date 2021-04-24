@@ -6,63 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f4bf298196.js" crossorigin="anonymous"></script>
     <title>Contacto - ISLA NEGRA CHOCOLATES</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../Css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- INICIO DEL HEADER--> 
-    <header>
-        <nav>
-            
-            <div class="navlogo_container">
-                <a href="../index.html"><img class="navlogo_container-imagen" src="../Media/logo.jpeg"></a>
+   
+    <header> 
+
+        <div class="container_nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+           
+            <a class="navbar-brand" href="../index.html"><img class="navlogo_container-imagen" src="../Media/logo.jpeg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="navlink_li" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="navlink_li" href="./Nosotros.html">Nosotros</a>
+                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="navlink_li dropdown-toggle" href="./Productos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Productos</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./Productos.html">Chocolate en tabletas</a>
+                                <a class="dropdown-item" href="./Productos.html">Chocolate en rama</a>
+                                <a class="dropdown-item" href="./Productos.html">Bombones de frutas</a>
+                                <a class="dropdown-item" href="./Productos.html">Ciruelas bañadas</a>
+                                <a class="dropdown-item" href="./Productos.html">Higos bañados</a>
+                                <a class="dropdown-item" href="./Productos.html">Naranjitas bañadas</a>
+                                <a class="dropdown-item" href="./Productos.html">Conitos de dulce de leche</a>
+                                <a class="dropdown-item" href="./Productos.html">Pasas de uva bañadas</a>
+                                <a class="dropdown-item" href="./Productos.html">Almendras bañadas</a>
+                                <a class="dropdown-item" href="./Productos.html">Avellanas bañadas</a>
+                                <a class="dropdown-item" href="./Productos.html">Trufas</a>
+                                <a class="dropdown-item" href="./Productos.html">Alfajores triples</a>
+                                <a class="dropdown-item" href="./Productos.html">Mani bañado en chocolate</a>
+                                <a class="dropdown-item" href="./Productos.html">Banana split</a>
+                                <a class="dropdown-item" href="./Productos.html">Frutillas bañadas</a>
+                                <a class="dropdown-item" href="./Productos.html">Conoreos</a>
+                                <a class="dropdown-item" href="./Productos.html ">Frambuesas bañadas</a>
+                            </div>
+                    </li>
+                    <li class="nav-item"><a class="navlink_li" href="./Contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="navlink_li" href="./Carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+                 </ul>
             </div>
 
-            <div class="navlinks_container">
-                <ul>
-                    <li class="navlink_li"><a href="../index.html">Inicio</a></li>
-                    <li class="navlink_li"><a href="./Nosotros.html">Nosotros</a></li>
-                    <li class="navlink_li"><a href="./Productos.html">Productos</a></li>
-                    <li class="navlink_li"><a href="./Contacto.html">Contacto</a></li>
-                    <li class="navlink_li"><a href="./Carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="nav_descuento">
-                <p>20% OFF EN TODA LA PAGINA. ENVIOS GRATIS EN CABA EN COMPRAS SUPERIORES A $2000</p>
-            </div>
-
+        </div>
         </nav>
-    </header>   
+
+        <div class="nav_descuento_contacto">
+            <p>20% OFF EN TODA LA PAGINA. ENVIOS GRATIS EN CABA EN COMPRAS SUPERIORES A $2000</p>
+        </div>
+
+    </header>
     <!-- FIN DEL HEADER--> 
 
     <!-- INICIO DEL MAIN-->
     <main>
         <div class="background_contacto">
 
-
-            <div class="logo_contacto">
-                 <img src="logochiquito.pgn">
-             </div>
-
-            <form>
-                 <div class="form_contacto">
-                    <h1>COMUNÍQUESE CON NOSOTROS COMPLETANDO EL SIGUIENTE FORMULARIO</h1>
-                    <input type="text" name="nombre" placeholder="Nombre" required> <br>
-                    <input type="text" name="Email" placeholder="Email" required> <br>
-                        <input type="text" name="Telefono" placeholder="Telefono" required> <br>
-                    <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
-            
-
-                 <div class="boton_form">
-                    <input type="submit" value="Enviar"/></class=>
-                 </div>
-
+            <div class="container-fluid">
+                <div class="container text-center">
+                    <h1 class="display-4">ISLA NEGRA CHOCOLATES</h1>
+                    <p class="lead">COMUNÍQUESE CON NOSOTROS COMPLETANDO EL SIGUIENTE FORMULARIO</p>
                 </div>
+            </div>
 
-              </form>
+            <div class="container">
+                <form>
+                    <div class="row" >
+                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre">
+                        </div>
+                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Escriba su apellido">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Escriba su email">
+                        </div>
+                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                            <label for="Telefono">Telefono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="Escriba su teléfono">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="Mensaje">Mensaje</label>
+                            <input type="textarea" class="form-control" id="mensaje" placeholder="Escriba su mensaje">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </main>
     <!-- FIN DEL MAIN--> 
@@ -72,39 +126,45 @@
 
     <footer>
 
-        <div class="container_footer">
-
-            <div class="container_footer_registrate">
-                <h3>Registrate para recibir actualizaciones de nuestros productos y promociones</h3>
+        <div class="card text-center">
+            <div class="card-header">
+                 ISLA NEGRA CHOCOLATES
+             </div>
+             <div class="card-body">
+                <h5 class="card-title">Registrate para recibir actualizaciones de nuestros productos y promociones</h5>
+                    <div class="container_card_newsletter">
+                        <input class="container_card_blankspace" type="text" name="Ingresa tu mail" name="mail" required>
+                        <input class="container_card_newsleeter_boton" type="submit" value="Enviar">
+                     </div>
+                     <div class="container_redes_box">
+                        <div class="boton_redes">
+                            <div class="boton_redes_icon"><a href="https://www.instagram.com/islanegrachocolates/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                         </div>
+         
+                         <div class="boton_redes">
+                             <div class="boton_redes_icon"><a href="https://www.facebook.com/chocolates.islanegra" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+                         </div>
+         
+                          <div class="boton_redes">
+                             <div class="boton_redes_icon"><a href="https://twitter.com"><i class="fab fa-twitter" target="_blank"></i></a></div>
+                         </div>
+                    </div>
             </div>
 
-            <div class="container_footer_newsletter">
-                <input class="container_footer_blankspace" type="text" name="Ingresa tu mail" name="mail" required>
-                <input class="container_footer_newsleeter_boton" type="submit" value="Aceptar">
-            </div>
-        
-            <div class="container_redes_box">
-                <div class="boton_redes">
-                    <div class="boton_redes_icon"><a href="https://www.instagram.com/islanegrachocolates/" target="_blank"><i class="fab fa-instagram"></i></a></div>
-                 </div>
- 
-                 <div class="boton_redes">
-                     <div class="boton_redes_icon"><a href="https://www.facebook.com/chocolates.islanegra" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
-                 </div>
- 
-                  <div class="boton_redes">
-                     <div class="boton_redes_icon"><a href="https://twitter.com"><i class="fab fa-twitter" target="_blank"></i></a></div>
-                 </div>
-                
-                 <p class="container_copyright">Copyright Isla negra chocolates - 2021. Todos los derechos reservados.</p>
-              </div>
-   
+             <div class="card-footer text-muted">
+                Copyright Isla negra chocolates - 2021. Todos los derechos reservados.
+             </div>
+
         </div>
-        
+    
     </footer>
 
 
     <!-- FIN DEL FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 </body>
 </html>
