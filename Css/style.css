@@ -4,12 +4,12 @@
     text-decoration: none;
 }
 
-/*
+
 header {
     position: absolute;
     z-index: 1;
     width: 100%;
-} */
+} 
 
 body {
     background-color: rgb(230, 230, 230);
