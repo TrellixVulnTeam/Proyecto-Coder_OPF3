@@ -2,6 +2,7 @@ $font-stack: 'Asap', sans-serif;
 $primary-color: #efd3d7;
 $secondary-color: rgb(230, 230, 230);
 $third-color: rgb(80, 58, 58); 
+$size: 2;
 
 *{
     margin:0;
@@ -50,7 +51,7 @@ nav {
     width: 80px;
     border-radius: 110px;
     position: relative;
-    left: 30px;
+    left: 60px / $size;
 }
 
 ul li {
